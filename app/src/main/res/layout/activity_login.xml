@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/loginbackground"
+    android:theme="@style/LoginActivityTheme"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/hospital_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:src="@mipmap/hospital"
+        app:layout_constraintStart_toStartOf="@+id/login_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/account_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="16dp"
+        android:src="@mipmap/user"
+        app:layout_constraintEnd_toStartOf="@+id/account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hospital_image" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="88dp"
+        android:inputType="textPassword"
+        android:minWidth="200dp"
+        android:maxLines="1"
+        android:hint="@string/password_hint"
+        android:textColorHint="@color/hint_text_color"
+        android:selectAllOnFocus="true"
+        app:layout_constraintBottom_toTopOf="@+id/check_remember_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/password_image"
+        app:layout_constraintTop_toBottomOf="@+id/account" />
+
+    <ImageView
+        android:id="@+id/password_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:src="@mipmap/password"
+        app:layout_constraintEnd_toStartOf="@+id/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account_image" />
+
+    <EditText
+        android:id="@+id/account"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="86dp"
+        android:minWidth="200dp"
+        android:maxLines="1"
+        android:hint="@string/account_hint"
+        android:textColorHint="@color/hint_text_color"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/account_image"
+        app:layout_constraintTop_toTopOf="@+id/account_image" />
+
+    <CheckBox
+        android:id="@+id/check_remember_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/check_re_account"
+        app:layout_constraintStart_toStartOf="@+id/password_image"
+        app:layout_constraintTop_toBottomOf="@+id/password_image" />
+
+    <Button
+        android:id="@+id/sign_in"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:background="@color/loginbutton"
+        android:minWidth="200dp"
+        android:text="@string/sign_in"
+        android:textColor="@color/brown"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_remember_account" />
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="@string/login_text"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/account"
+        app:layout_constraintStart_toStartOf="@+id/account"
+        app:layout_constraintTop_toBottomOf="@+id/hospital_image" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

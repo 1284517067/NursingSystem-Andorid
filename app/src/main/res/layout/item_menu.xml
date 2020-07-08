@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/item_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/white"
+        android:text="@string/grade_one_nursing"
+        android:textColor="@color/hint_text_color"
+        android:textSize="25sp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="5dp"/>
+    <TextView
+        android:id="@+id/item_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/white"
+        android:text="@string/grade_two_nursing"
+        android:textColor="@color/hint_text_color"
+        android:textSize="25sp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="5dp"/>
+    <TextView
+        android:id="@+id/item_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/white"
+        android:text="@string/grade_three_nursing"
+        android:textColor="@color/hint_text_color"
+        android:textSize="25sp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="5dp"/>
+    <TextView
+        android:id="@+id/item_intensive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/white"
+        android:text="@string/intensive_care"
+        android:textColor="@color/hint_text_color"
+        android:textSize="25sp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="5dp"/>
+
+
+</LinearLayout>

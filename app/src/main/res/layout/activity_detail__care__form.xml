@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.Detail_Care_FormActivity">
+
+    <fragment
+        android:id="@+id/dcf_toolbar"
+        android:name="com.example.nursingsystem.Fragment.ToolbarFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/dcf_observation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/edit_text_theme"
+        android:maxWidth="250dp"
+        android:maxLines="2"
+        android:minWidth="250dp"
+        android:minLines="2"
+        android:textColor="@color/hint_text_color"
+        app:layout_constraintStart_toStartOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <Button
+        android:id="@+id/dcf_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/btn"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dcf_observation" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:text="皮肤情况："
+        android:textColor="@color/hint_text_color"
+        android:textSize="22sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dcf_skin"
+        app:layout_constraintEnd_toStartOf="@+id/dcf_skin"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="入量："
+        android:textColor="@color/hint_text_color"
+        android:textSize="22sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dcf_intput"
+        app:layout_constraintEnd_toStartOf="@+id/dcf_intput"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/dcf_tube_care"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edit_text_theme"
+        android:maxWidth="140dp"
+        android:maxLines="1"
+        android:minWidth="140dp"
+        android:textColor="@color/hint_text_color"
+        app:layout_constraintBottom_toTopOf="@+id/textView21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView20" />
+
+    <EditText
+        android:id="@+id/dcf_skin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/edit_text_theme"
+        android:maxWidth="140dp"
+        android:maxLines="1"
+        android:minWidth="140dp"
+        android:textColor="@color/hint_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/dcf_intput" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="54dp"
+        android:text="病情观察及措施："
+        android:textColor="@color/hint_text_color"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/dcf_skin" />
+
+    <EditText
+        android:id="@+id/dcf_oxygen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="19dp"
+        android:background="@drawable/edit_text_theme"
+        android:maxWidth="180dp"
+        android:maxLines="1"
+        android:minWidth="180dp"
+        android:textColor="@color/hint_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/dcf_name" />
+
+    <EditText
+        android:id="@+id/dcf_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="19dp"
+        android:background="@drawable/edit_text_theme"
+        android:maxWidth="180dp"
+        android:maxLines="1"
+        android:minWidth="180dp"
+        android:textColor="@color/hint_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/dcf_oxygen" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:text="管路护理："
+        android:textColor="@color/hint_text_color"
+        android:textSize="22sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dcf_tube_care"
+        app:layout_constraintEnd_toStartOf="@+id/dcf_tube_care"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/dcf_intput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="19dp"
+        android:background="@drawable/edit_text_theme"
+        android:maxWidth="180dp"
+        android:maxLines="1"
+        android:minWidth="180dp"
+        android:textColor="@color/hint_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/dcf_output" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="出量："
+        android:textColor="@color/hint_text_color"
+        android:textSize="22sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dcf_output"
+        app:layout_constraintEnd_toStartOf="@+id/dcf_output"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="吸氧："
+        android:textColor="@color/hint_text_color"
+        android:textSize="22sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dcf_oxygen"
+        app:layout_constraintEnd_toStartOf="@+id/dcf_oxygen"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/dcf_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/hint_text_color"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dcf_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/hint_text_color"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dcf_id" />
+
+    <fragment
+        android:id="@+id/dcf_navbar"
+        android:name="com.example.nursingsystem.Fragment.NavbarFlagment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

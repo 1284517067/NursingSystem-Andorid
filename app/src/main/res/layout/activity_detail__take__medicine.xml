@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.Detail_Take_MedicineActivity">
+
+    <fragment
+        android:id="@+id/dtm_toolbar"
+        android:name="com.example.nursingsystem.Fragment.ToolbarFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/dtm_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="150dp"
+        android:textColor="@color/hint_text_color"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dtm_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/hint_text_color"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dtm_elixir" />
+
+    <TextView
+        android:id="@+id/dtm_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:textColor="@color/hint_text_color"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/dtm_time"
+        app:layout_constraintTop_toBottomOf="@+id/dtm_time" />
+
+    <Button
+        android:id="@+id/dtm_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn"
+        android:text="确认收药"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dtm_status" />
+
+    <TextView
+        android:id="@+id/dtm_elixir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:textColor="@color/hint_text_color"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/dtm_bed"
+        app:layout_constraintTop_toBottomOf="@+id/dtm_bed" />
+
+    <TextView
+        android:id="@+id/dtm_bed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textColor="@color/hint_text_color"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/dtm_name"
+        app:layout_constraintTop_toBottomOf="@+id/dtm_name" />
+
+    <TextView
+        android:id="@+id/dtm_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textColor="@color/hint_text_color"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/dtm_id"
+        app:layout_constraintTop_toBottomOf="@+id/dtm_id" />
+
+    <fragment
+        android:id="@+id/fragment6"
+        android:name="com.example.nursingsystem.Fragment.NavbarFlagment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

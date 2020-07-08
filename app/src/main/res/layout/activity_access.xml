@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.AccessActivity">
+
+    <fragment
+        android:id="@+id/access_toolbar"
+        android:name="com.example.nursingsystem.Fragment.ToolbarFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/access_inpatient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="住院号：2222"
+        android:textColor="@color/hint_text_color"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/access_name"
+        app:layout_constraintTop_toBottomOf="@+id/access_name" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="回室时间："
+        android:textColor="@color/hint_text_color"
+        android:textSize="22sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/access_back"
+        app:layout_constraintEnd_toStartOf="@+id/access_back"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="外出原因："
+        android:textColor="@color/hint_text_color"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/access_back"
+        app:layout_constraintTop_toBottomOf="@+id/access_out" />
+
+    <TextView
+        android:id="@+id/access_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="98dp"
+        android:text="姓名：阿斯顿撒"
+        android:textColor="@color/hint_text_color"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="外出时间："
+        android:textColor="@color/hint_text_color"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/access_out"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/access_inpatient" />
+
+    <EditText
+        android:id="@+id/access_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="29dp"
+        android:background="@drawable/edit_text_theme"
+        android:inputType="datetime"
+        android:maxWidth="150sp"
+        android:maxLines="1"
+        android:minWidth="150sp"
+        android:textColor="@color/hint_text_color"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView25" />
+
+    <EditText
+        android:id="@+id/access_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/edit_text_theme"
+        android:inputType="date"
+        android:maxWidth="150sp"
+        android:maxLines="1"
+        android:minWidth="150sp"
+        android:textColor="@color/hint_text_color"
+        app:layout_constraintBottom_toTopOf="@+id/textView24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView23" />
+
+    <EditText
+        android:id="@+id/access_reason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/edit_text_theme"
+        android:maxWidth="260sp"
+        android:maxLines="4"
+        android:minWidth="260sp"
+        android:minLines="4"
+        android:textColor="@color/hint_text_color"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <Button
+        android:id="@+id/access_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/btn"
+        android:text="提交"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/access_reason"
+        app:layout_constraintStart_toStartOf="@+id/access_reason"
+        app:layout_constraintTop_toBottomOf="@+id/access_reason" />
+
+    <fragment
+        android:id="@+id/access_navbar"
+        android:name="com.example.nursingsystem.Fragment.NavbarFlagment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

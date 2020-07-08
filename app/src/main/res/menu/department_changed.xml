@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/grade_one_nursing"
+        android:id="@+id/grade_one"/>
+    <item android:title="@string/grade_two_nursing"
+        android:id="@+id/grade_two"/>
+    <item android:title="@string/grade_three_nursing"
+        android:id="@+id/gradeThree"/>
+    <item android:title="@string/intensive_care"
+        android:id="@+id/grade_special"/>
+</menu>

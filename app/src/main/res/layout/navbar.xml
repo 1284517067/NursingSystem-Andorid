@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/doctor_advice_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/advice"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="@string/doctoradvice"
+            android:textColor="@color/gray"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/blood_samping_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/blood_samping"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="@string/collect_sign"
+            android:textColor="@color/gray"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/tour_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/bed"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="@string/check_sickbed"
+            android:textColor="@color/gray"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/information_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/information"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="@string/information"
+            android:textColor="@color/gray"
+            android:textSize="18sp" />
+
+
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

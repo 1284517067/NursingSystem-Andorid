@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.DetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/patient_message"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/detail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/lucency"
+            android:drawableTop="@mipmap/back"
+            android:gravity="center"
+            android:paddingTop="15sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="23dp"
+        android:gravity="center"
+        android:textColor="@color/hint_text_color"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
+
+    <TextView
+        android:id="@+id/detail_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="@color/hint_text_color"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_name" />
+
+    <TextView
+        android:id="@+id/detail_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="@color/hint_text_color"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_bednum" />
+
+    <TextView
+        android:id="@+id/detail_department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="@color/hint_text_color"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_age" />
+
+    <TextView
+        android:id="@+id/detail_bednum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="@color/hint_text_color"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_department" />
+
+    <TextView
+        android:id="@+id/detail_inpatient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="@color/hint_text_color"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_sex" />
+
+    <Button
+        android:id="@+id/detail_advice_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:background="@color/lucency"
+        android:drawableTop="@mipmap/advice_record"
+        android:text="@string/advice_record"
+        android:textColor="@color/hint_text_color"
+        app:layout_constraintStart_toEndOf="@+id/detail_advice"
+        app:layout_constraintTop_toTopOf="@+id/detail_advice" />
+
+    <Button
+        android:id="@+id/detail_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:background="@color/lucency"
+        android:drawableTop="@mipmap/sign"
+        android:text="采集体征"
+        android:textColor="@color/hint_text_color"
+        app:layout_constraintStart_toStartOf="@+id/detail_advice_record"
+        app:layout_constraintTop_toBottomOf="@+id/detail_advice_record" />
+
+    <Button
+        android:id="@+id/detail_advice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="295dp"
+        android:layout_marginBottom="296dp"
+        android:background="@color/lucency"
+        android:drawableTop="@mipmap/doc_advice"
+        android:text="@string/doctoradvice"
+        android:textColor="@color/hint_text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/detail_name" />
+
+    <Button
+        android:id="@+id/detail_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:background="@color/lucency"
+        android:drawableTop="@mipmap/cost"
+        android:text="@string/cost"
+        android:textColor="@color/hint_text_color"
+        app:layout_constraintStart_toStartOf="@+id/detail_advice"
+        app:layout_constraintTop_toBottomOf="@+id/detail_advice" />
+
+    <Button
+        android:id="@+id/detail_access"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/lucency"
+        android:drawableTop="@mipmap/access_record"
+        android:text="出入管理"
+        android:textColor="@color/hint_text_color"
+        app:layout_constraintStart_toStartOf="@+id/detail_cost"
+        app:layout_constraintTop_toBottomOf="@+id/detail_cost" />
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.nursingsystem.Fragment.NavbarFlagment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
